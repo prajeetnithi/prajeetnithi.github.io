@@ -13,20 +13,27 @@ const featuredProjects: Project[] = [
       "An AI-powered assistant that helps hackathon judges evaluate submissions efficiently. It uses Google Gemini to analyze the project description, screenshot, and PDF, then scores innovation and technical execution while generating constructive feedback.",
     link: "https://github.com/prajeetnithi/AI-Hackathon-Judge-Assistant.git",
   },
+  {
+    id: 2,
+    title: "AI Study Assistant",
+    description:
+      "A full-stack Next.js dashboard that connects to Google Classroom using Google OAuth 2.0 and Google Gemini. It reads course content (via Classroom read-only scopes) so students can summarize materials, chat with an AI tutor, and generate quizzes from their assignments.",
+    link: "https://github.com/prajeetnithi/ai-study-assistant?tab=readme-ov-file#ai-study-assistant",
+  },
 ];
 
 export default function Projects(): React.JSX.Element {
   return (
     <section id="lab" className="py-20 px-6">
       <div className="container mx-auto max-w-7xl">
+        <p className="text-purple-400 text-xs lg:text-sm font-medium uppercase tracking-[0.25em] mb-8 text-center">
+          Featured Projects
+        </p>
         {featuredProjects.map((project) => {
           return (
             <div key={project.id} className="mb-20 last:mb-0">
               <div className="relative flex justify-center">
                 <div className="w-full max-w-3xl bg-linear-to-br from-white/5 to-white/10 backdrop-blur-md rounded-2xl p-8 lg:p-10 border border-white/10 shadow-2xl shadow-purple-900/40 transition-transform transition-shadow duration-300 hover:-translate-y-2 hover:shadow-purple-900/80">
-                  <p className="text-purple-400 text-xs lg:text-sm font-medium uppercase tracking-[0.25em] mb-3">
-                    Featured Project
-                  </p>
                   <a
                     href={project.link}
                     target="_blank"

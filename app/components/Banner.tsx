@@ -47,7 +47,7 @@ export default function Banner(): React.JSX.Element {
       className="min-h-screen flex items-center justify-center pt-28 lg:pt-32 px-6"
     >
       <div className="container mx-auto max-w-6xl">
-        <div className="flex flex-col items-center lg:items-start text-center lg:text-left space-y-8">
+        <div className="flex flex-col items-center text-center space-y-8">
           <div className="w-full max-w-3xl bg-white/5 border border-white/10 rounded-2xl px-6 py-6 lg:px-8 lg:py-8 backdrop-blur-md shadow-xl shadow-purple-900/40 transition-transform duration-500 ease-out hover:-translate-y-2 hover:shadow-purple-900/80">
             <p className="text-sm lg:text-base uppercase tracking-[0.25em] text-purple-300 mb-3">
               AI Innovator &middot; AIML Student
