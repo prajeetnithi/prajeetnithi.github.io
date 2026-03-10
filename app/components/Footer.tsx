@@ -3,47 +3,73 @@ import Image from "next/image";
 
 export default function Footer(): React.JSX.Element {
   return (
-    <footer id="contact" className="py-10  px-6 border-t border-white/10">
+    <footer id="contact" className="py-10 px-6 border-t border-white/10">
       <div className="container mx-auto max-w-6xl">
-        <div className="text-center mb-12">
+        <div className="text-center mb-12 transition-transform duration-300 hover:-translate-y-1">
           <h2 className="text-4xl lg:text-5xl font-bold text-white mb-6">
             Contact
           </h2>
           <p className="text-md text-white/80 max-w-2xl mx-auto mb-8">
-            I&apos;m currently looking to join a cross-functional team that values 
-            improving people&apos;s lives through accessible design, or have a project 
-            in mind? Let&apos;s connect.
+            I&apos;m always open to connecting about AI, machine learning, and 
+            innovative tech projects. If you&apos;d like to collaborate or just say hi, 
+            feel free to reach out.
           </p>
           <a
-            href="mailto:ibii.code@gmail.com"
-            className="text-md text-purple-400 hover:text-purple-300 transition-colors"
+            href="mailto:prajeetnithi@karunya.edu.in"
+            className="inline-flex items-center gap-2 text-md text-purple-400 hover:text-purple-200 transition-colors duration-200 group"
           >
-            ibii.code@gmail.com
+            <span className="relative">
+              <span className="absolute -inset-1 rounded-full bg-purple-500/20 blur-md opacity-0 group-hover:opacity-100 transition-opacity" />
+              <span className="relative">prajeetnithi@karunya.edu.in</span>
+            </span>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth="2"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              className="w-4 h-4 group-hover:translate-x-1 transition-transform"
+            >
+              <path d="M5 12h14" />
+              <path d="M13 6l6 6-6 6" />
+            </svg>
           </a>
         </div>
 
         {/* Social Media Icons */}
         <div className="flex justify-center gap-6 mt-12">
           <Link
-            href="https://www.instagram.com/ibii.memon/"
+            href="mailto:prajeetnithi@karunya.edu.in"
             target="_blank"
             rel="noopener noreferrer"
-            className="w-10 h-10 flex items-center justify-center rounded-full bg-white/10 hover:bg-white/20 border border-purple-500/30 hover:border-purple-500/50 transition-all"
-            aria-label="Instagram"
+            className="w-10 h-10 flex items-center justify-center rounded-full bg-white/10 border border-purple-500/30 transition-all duration-300 hover:bg-white/20 hover:border-purple-400 hover:-translate-y-1 hover:shadow-lg hover:shadow-purple-900/40"
+            aria-label="Gmail"
           >
-            <Image
-              src="/assets/insta.webp"
-              alt="Instagram"
-              width={20}
-              height={20}
-              className="w-5 h-5"
-            />
+            <svg
+              className="w-5 h-5 text-white"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth="2"
+              viewBox="0 0 24 24"
+            >
+              <rect
+                x="3"
+                y="5"
+                width="18"
+                height="14"
+                rx="2"
+                ry="2"
+              />
+              <polyline points="3 7 12 13 21 7" />
+            </svg>
           </Link>
           <Link
-            href="https://github.com/ibrahimmemonn"
+            href="https://github.com/prajeetnithi"
             target="_blank"
             rel="noopener noreferrer"
-            className="w-10 h-10 flex items-center justify-center rounded-full bg-white/10 hover:bg-white/20 border border-purple-500/30 hover:border-purple-500/50 transition-all"
+            className="w-10 h-10 flex items-center justify-center rounded-full bg-white/10 border border-purple-500/30 transition-all duration-300 hover:bg-white/20 hover:border-purple-400 hover:-translate-y-1 hover:shadow-lg hover:shadow-purple-900/40"
             aria-label="GitHub"
           >
             <svg
@@ -55,10 +81,10 @@ export default function Footer(): React.JSX.Element {
             </svg>
           </Link>
           <Link
-            href="https://www.linkedin.com/in/ibrahimmemonn/"
+            href="https://www.linkedin.com/in/prajeet-nithi-3270492a6"
             target="_blank"
             rel="noopener noreferrer"
-            className="w-10 h-10 flex items-center justify-center rounded-full bg-white/10 hover:bg-white/20 border border-purple-500/30 hover:border-purple-500/50 transition-all"
+            className="w-10 h-10 flex items-center justify-center rounded-full bg-white/10 border border-purple-500/30 transition-all duration-300 hover:bg-white/20 hover:border-purple-400 hover:-translate-y-1 hover:shadow-lg hover:shadow-purple-900/40"
             aria-label="LinkedIn"
           >
             <svg
@@ -73,7 +99,7 @@ export default function Footer(): React.JSX.Element {
 
         <div className="text-center mt-12 pt-8 border-t border-white/10">
           <p className="text-white/60 text-sm">
-            © {new Date().getFullYear()} Ibrahim Memon. All rights reserved.
+            © {new Date().getFullYear()} Prajeet Nithi. All rights reserved.
           </p>
         </div>
       </div>

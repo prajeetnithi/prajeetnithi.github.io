@@ -1,8 +1,9 @@
 import type { Metadata, Viewport } from "next";
 import { Poppins } from "next/font/google";
-import { Analytics } from "@vercel/analytics/next"
+import { Analytics } from "@vercel/analytics/next";
 
 import "./globals.css";
+import CursorGlow from "./components/CursorGlow";
 
 const poppins = Poppins({
   weight: ["300", "400", "500", "600", "700", "800", "900"],
@@ -12,34 +13,35 @@ const poppins = Poppins({
 });
 
 export const metadata: Metadata = {
-  title: "Ibrahim Memon - Software Engineer & UI/UX Designer",
-  description: "A self-taught UI/UX designer and Software Engineer at WebHR. Creating meaningful and delightful digital products that balance user needs and business goals. 3+ years of industry experience.",
+  title: "Prajeet Nithi - AI Innovator & AIML Student",
+  description:
+    "Prajeet Nithi is a B.Tech AIML student at Karunya Institute of Science and Technology, passionate about building innovative AI and IoT solutions that solve real-world problems.",
   keywords: [
-    "Ibrahim Memon",
-    "Software Engineer",
-    "UI/UX Designer",
-    "Frontend Developer",
-    "React Developer",
-    "Next.js Developer",
-    "Web Designer",
-    "WebHR Engineer",
+    "Prajeet Nithi",
+    "AI Innovator",
+    "AIML Student",
+    "Artificial Intelligence",
+    "Machine Learning",
+    "Python",
     "Portfolio",
   ],
-  authors: [{ name: "Ibrahim Memon" }],
-  creator: "Ibrahim Memon",
-  publisher: "Ibrahim Memon",
+  authors: [{ name: "Prajeet Nithi" }],
+  creator: "Prajeet Nithi",
+  publisher: "Prajeet Nithi",
   openGraph: {
     type: "website",
     locale: "en_US",
-    url: "https://ibiimemon.com",
-    title: "Ibrahim Memon - Software Engineer & UI/UX Designer",
-    description: "A self-taught UI/UX designer and Software Engineer at WebHR. Creating meaningful and delightful digital products.",
-    siteName: "Ibrahim Memon Portfolio",
+    url: "https://prajeetnithi.github.io",
+    title: "Prajeet Nithi - AI Innovator & AIML Student",
+    description:
+      "Portfolio of Prajeet Nithi, showcasing AI, machine learning, and IoT projects.",
+    siteName: "Prajeet Nithi Portfolio",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Ibrahim Memon - Software Engineer & UI/UX Designer",
-    description: "A self-taught UI/UX designer and Software Engineer at WebHR.",
+    title: "Prajeet Nithi - AI Innovator & AIML Student",
+    description:
+      "B.Tech AIML student building innovative AI and IoT solutions.",
   },
   robots: {
     index: true,
@@ -68,11 +70,12 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        <link rel="canonical" href="https://ibiimemon.com" />
+        <link rel="canonical" href="https://prajeetnithi.github.io" />
       </head>
       <body
         className={`${poppins.variable} font-sans antialiased`}
       >
+        <CursorGlow />
         {children}
         <Analytics />
       </body>
