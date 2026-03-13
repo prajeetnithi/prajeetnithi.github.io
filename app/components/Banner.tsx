@@ -61,9 +61,8 @@ export default function Banner(): React.JSX.Element {
               </span>
             </h1>
             <p className="text-md lg:text-lg text-white/80 max-w-2xl">
-              I design and build AI and IoT solutions that automate workflows,
-              enhance decisions, and create smarter experiences for people and
-              products.
+              I design and build AI solutions that automate workflows, enhance
+              decisions, and create smarter experiences for people and products.
             </p>
 
             <div className="mt-6 flex flex-wrap gap-3 justify-center lg:justify-start">
@@ -129,8 +128,8 @@ export default function Banner(): React.JSX.Element {
             </span>
           </p>
           <p className="text-lg text-white/80 max-w-2xl mx-auto lg:mx-0">
-            I&apos;m passionate about building innovative AI and IoT solutions that
-            solve real-world problems through automation, intelligent decision-making,
+            I&apos;m passionate about building innovative AI solutions that solve
+            real-world problems through automation, intelligent decision-making,
             and smart technologies.
           </p>
         </div>

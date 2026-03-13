@@ -42,8 +42,8 @@ export default function About(): React.JSX.Element {
               Smart, Practical Solutions
             </h3>
             <p className="text-sm text-white/80 leading-relaxed">
-              Projects like the AI Hackathon Judge that combine AI, automation,
-              and user-friendly interfaces to make work more efficient.
+              AI-powered tools and applications that combine automation and
+              user-friendly interfaces to make everyday work more efficient.
             </p>
           </div>
 
